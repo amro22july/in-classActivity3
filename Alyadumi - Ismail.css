@@ -1,0 +1,83 @@
+/* CENG311 Activity 3 CSS file */
+
+/* Outer Box Around the Table */
+.table-container {
+    border: 3px solid black;
+    padding: 15px; 
+    display: inline-block;
+    margin: 20px auto; 
+}
+
+.table-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+/* Table Borders */
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;  /* Ensures all cells, including numbers, are aligned left */
+    vertical-align: middle;
+}
+
+/* Header Row Styling */
+thead th {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Prevent Yellow Background on Department Names */
+td[rowspan] {
+    background-color: white !important;
+    font-weight: bold;
+    text-align: left;
+	vertical-align: top
+}
+
+
+tbody tr:nth-child(even) td:not(:first-child) {
+    background-color: yellow;
+}
+
+
+
+tr.total td {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: right;
+}
+
+thead th {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+td.highlight {
+    background-color: yellow !important;
+}
+
+
+td.right {
+    text-align: right;
+}
+
+
+tr.total td {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: right;
+}
+tr.total td:last-child {
+    text-align: right;
+}
